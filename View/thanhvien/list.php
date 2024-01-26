@@ -22,7 +22,9 @@
                 <td><?php echo $value['quequan']; ?></td>
                 <td>
                     <a href="index.php?controller=thanh-vien&action=edit&id=<?php echo $value['id']; ?>">Edit</a>
-                    <a href="">Delete</a>
+                    <a href="index.php?controller=thanh-vien&action=delete&id=<?php echo $value['id'];?>" title="Xóa">Delete</a>
+                </td>
+
                 </td>
             </tr>
             <?php
