@@ -1,4 +1,10 @@
 <div class="danhsach">
+
+    <form method="POST" action="search_user.php">
+        <input type="text" name="search" placeholder="Nhập tên người dùng...">
+        <input type="submit" name="submit_search" value="Tìm kiếm">
+    </form>
+
     <h3 style="text-align: center; margin-top: 50px; color: #fff; background-color:green">Danh sách thành viên - Quản lý thành viên</h3>
     <table border="1px" style="margin: auto; min-width: 800px">
         <thead>

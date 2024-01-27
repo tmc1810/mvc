@@ -31,12 +31,6 @@
     </style>
 </head>
 <body>
-    <h1>TÌM KIẾM</h1>
-    <form method="POST" action="">
-        <input type="text" name="search" placeholder="Nhập tên người dùng...">
-        <input type="submit" name="submit_search" value="Tìm kiếm">
-    </form>
-
     <?php
         if(!empty($data)) {
             echo "<table>";
