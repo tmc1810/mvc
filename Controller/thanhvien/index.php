@@ -61,6 +61,15 @@
             break;
         }
 
+        case 'search': {
+            if(isset($_POST['submit_search'])) {
+                $search = $_POST['search'];
+                $data = $db->SearchData($search);
+            }
+            require_once("View/thanhvien/search_user.php");
+            break;
+        }
+
         case 'list':{
             $tblTable = "thanhvien";
             $data = $db->getAllData($tblTable);

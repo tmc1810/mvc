@@ -43,6 +43,7 @@ INSERT INTO `thanhvien` (`id`, `hoten`, `namsinh`, `quequan`) VALUES
 (2, 'Nguyễn Văn A', 2004, 'Hanoi'),
 (3, 'Nguyễn Văn B', 1999, 'Hưng Yên'),
 (4, 'Nguyễn Văn C', 2005, 'Bắc Ninh'),
+(5, 'Phạm Hồng Đức', 2003, 'Quảng Ninh'),
 (7, 'Tuấn Đồng', 2003, 'HN');
 
 --

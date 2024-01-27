@@ -1,9 +1,11 @@
 <?php
+
+
     class Database {
         private $hostname = 'localhost';
         private $username = 'root';
         private $pass = '';
-        private $dbname = 'quanlythanhvien_mvc';
+        private $dbname = 'thanhvien';
     
         private $conn = NULL;
         private $result = NULL;
@@ -39,6 +41,21 @@
                 $data = 0;
              }
              return $data;
+        }
+
+        // Phương thức tìm kiếm dữ liệu:
+        public function SearchData($search) {
+            $sql = "SELECT * FROM thanhvien WHERE hoten LIKE '%$search%'";
+            $this->excute($sql);
+            if($this->num_row()==0) {
+                $data=0;
+            }
+            else {
+                while($datas = $this->getData()) {
+                    $data[] = $datas;
+                }
+            }
+            return $data;
         }
 
         //Phương thức lấy toàn bộ dữ liệu:
