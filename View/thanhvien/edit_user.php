@@ -25,7 +25,7 @@
                     </tr>
                     <tr>
                         <td>&nbsp;</td>
-                        <td><input type="submit" name="edit_user" value="Cập nhật"></td>
+                        <td><input type="submit" name="update_user" value="Cập nhật"></td>
                     </tr>
                 </table>
             </form>

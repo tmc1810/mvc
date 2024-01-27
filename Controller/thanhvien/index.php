@@ -31,6 +31,16 @@
                 $id = $_GET['id'];
                 $tblTable = "thanhvien";
                 $dataID = $db->getDataID($tblTable, $id);
+
+                if(isset($_POST['update_user'])){
+                    $hoten = $_POST['hoten'];
+                    $namsinh = $_POST['namsinh'];
+                    $quequan = $_POST['quequan'];
+
+                    if($db->UpdateData($id, $hoten, $namsinh, $quequan)){
+                        header('location: index.php?controller=thanh-vien&action=list');
+                    }
+                }
             }
             require_once('View/thanhvien/edit_user.php');
             break;

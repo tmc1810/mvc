@@ -91,7 +91,7 @@
         // Phương thức sửa dữ liệu:
         public function UpdateData($id, $hoten, $namsinh, $quequan)
         {
-            $sql = "UPDATE thanhvien SET hoten = '$hoten', namsinh = '$namsinh', quequan = '$quequan WHERE id = '$id'";
+            $sql = "UPDATE thanhvien SET hoten = '$hoten', namsinh = '$namsinh', quequan = '$quequan' WHERE id = '$id'";
             return $this->excute($sql);
         }
 
