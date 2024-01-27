@@ -5,7 +5,7 @@
         private $hostname = 'localhost';
         private $username = 'root';
         private $pass = '';
-        private $dbname = 'thanhvien';
+        private $dbname = 'quanlythanhvien_mvc';
     
         private $conn = NULL;
         private $result = NULL;
