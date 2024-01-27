@@ -62,8 +62,8 @@
         }
 
         case 'search': {
-            if(isset($_POST['submit_search'])) {
-                $search = $_POST['search'];
+            if(isset($_GET['submit_search'])) {
+                $search = $_GET['search'];
                 $data = $db->SearchData($search);
             }
             require_once("View/thanhvien/search_user.php");

@@ -43,21 +43,6 @@
              return $data;
         }
 
-        // Phương thức tìm kiếm dữ liệu:
-        public function SearchData($search) {
-            $sql = "SELECT * FROM thanhvien WHERE hoten LIKE '%$search%'";
-            $this->excute($sql);
-            if($this->num_row()==0) {
-                $data=0;
-            }
-            else {
-                while($datas = $this->getData()) {
-                    $data[] = $datas;
-                }
-            }
-            return $data;
-        }
-
         //Phương thức lấy toàn bộ dữ liệu:
         public function getAllData($table)
         {
@@ -117,6 +102,21 @@
         {
             $sql = "DELETE FROM thanhvien WHERE id = '$id'";
             return $this->excute($sql);
+        }
+
+        // Phương thức tìm kiếm dữ liệu:
+        public function SearchData($search) {
+            $sql = "SELECT * FROM thanhvien WHERE hoten LIKE '%$search%'";
+            $this->excute($sql);
+            if($this->num_row()==0) {
+                $data=0;
+            }
+            else {
+                while($datas = $this->getData()) {
+                    $data[] = $datas;
+                }
+            }
+            return $data;
         }
     }
 ?>
