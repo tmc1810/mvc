@@ -21,6 +21,9 @@
     </form>
 </div>
 
+<?php
+if (!empty($data)) {
+?>
 <div class="danhsach">
     <h3 style="text-align: center; margin-top: 50px; color: #fff; background-color:green">Danh sách thành viên - Quản lý thành viên</h3>
     <table border="1px" style="margin: auto; min-width: 800px">
@@ -55,3 +58,8 @@
         </tbody>
     </table>
 </div>
+<?php
+} else {
+    echo '<h3 style="text-align: center; margin-top: 50px; color: #fff; background-color:green">Không tìm thấy kết quả nào.</h3>';
+}
+?>
